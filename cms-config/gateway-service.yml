@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: zuul
+    
+server :
+  port : 9009
+  
+zuul:
+  routes:
+    cmsforce:
+      path: /cmsforce/**
+      service-id: CMSFORCE
+      strip-prefix: false

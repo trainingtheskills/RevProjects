@@ -1,0 +1,11 @@
+ribbon:
+  ConnectTimeout: 30000
+  ReadTimeout: 30000
+      
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL}
+  instance:
+    lease-expiration-duration-in-seconds: 2
+    lease-renewal-interval-in-seconds: 1
